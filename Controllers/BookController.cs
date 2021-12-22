@@ -20,33 +20,16 @@ namespace library1.Controllers
             return View();
         }
 
-        // GET: Book/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
+     
 
         // POST: Book/Create
         [HttpPost]
         public ActionResult Create(FormCollection collection)
         {
-            try
-            {
-                // TODO: Add insert logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+            return Json("", JsonRequestBehavior.AllowGet);
         }
 
-        // GET: Book/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
+      
 
         // POST: Book/Edit/5
         [HttpPost]
@@ -70,20 +53,5 @@ namespace library1.Controllers
             return View();
         }
 
-        // POST: Book/Delete/5
-        [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add delete logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
     }
 }
