@@ -11,6 +11,8 @@ namespace library1.Models
         public string author;
         public int year;
         public int numOfPages;
+        public int id;
+        public  int counter = 0;
 
         public Book(string name, string author, int year, int numOfPages)
         {
@@ -18,6 +20,7 @@ namespace library1.Models
             this.author = author;
             this.year = year;
             this.numOfPages = numOfPages;
+            this.id = counter++;
 
         }
     }
